@@ -1,0 +1,67 @@
+walking:
+  #todo engineFrequency gyroActive
+
+  # Best step length: 4cm
+
+  # Full walk cycle frequency
+  # (in Hz, > 0)
+  freq: 2.0
+  # Length of double support phase in half cycle
+  # (ratio, [0:1])
+  doubleSupportRatio: 0.5
+  # Lateral distance between the feet center
+  # (in m, >= 0)
+  footDistance: 0.20
+  # Maximum flying foot height
+  # (in m, >= 0)
+  footRise: 0.06
+  # Phase of flying foot apex
+  # (single support cycle phase, [0:1])
+  footApexPhase: 0.5
+  # Foot X/Y overshoot in ratio of step length
+  # (ratio, >= 0)
+  footOvershootRatio: 0.05
+  # Foot X/Y overshoot phase
+  # (single support cycle phase, [footApexPhase:1]
+  footOvershootPhase: 0.85
+  # Height of the trunk from ground
+  # (in m, > 0)
+  trunkHeight: 0.30
+  # Trunk pitch orientation
+  # (in rad)
+  trunkPitch: 0.17
+  # Phase offset of trunk oscillation
+  # (half cycle phase, [0:1])
+  trunkPhase: 0.4
+  # Trunk forward offset
+  # (in m)
+  trunkXOffset: 0.0
+  # Trunk lateral offset
+  # (in m)
+  trunkYOffset: 0.0
+  # Trunk lateral oscillation amplitude ratio
+  # (ratio, >= 0)
+  trunkSwing: 0.42
+  # Trunk swing pause length in phase at apex
+  # (half cycle ratio, [0:1])
+  trunkPause: 0.0
+  # Trunk forward offset proportional to forward step
+  # (in 1)
+  trunkXOffsetPCoefForward: 0.0
+  # Trunk forward offset proportional to rotation step
+  # (in m/rad)
+  trunkXOffsetPCoefTurn: 0.0
+  # Trunk pitch orientation proportional to forward step
+  # (in rad/m)
+  trunkPitchPCoefForward: 0.0
+  # Trunk pitch orientation proportional to rotation step
+  # (in 1)
+  trunkPitchPCoefTurn: 0.0
+
+  engineFreq: 50.0
+  bioIKTime: 0.01
+  bioIKApprox: True
+  useAnalyticSolver: True
+
+  debugActive: True
+  pubModelJointStates: False
